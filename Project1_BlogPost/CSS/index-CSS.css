@@ -1,59 +1,114 @@
-/*
+
 .container{
     width: 90%;
     height: 90%;
     display: grid;
+    background-color: white;
     grid-template-columns: 1fr;
     grid-template-rows: auto 300px 1fr auto;
+    grid-gap: 10px;
     grid-template-areas: 
     "hd"
     "ct"
     "sd"
     "ft";
-    border: red;
 }
-*/
+
 @media (min-width: 400px) and (max-width: 900px){
     .container{
         width: 90%;
         height: 90%;
+        background-color: white;
         display: grid;
-        grid-template-columns: 70% 1fr;
-        grid-template-rows: 50px 300px 1fr;
-        border: red;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto 300px 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "hd hd hd hd hd"
+        "ct sd sd sd sd"
+        "ft ft ft ft ft";
     }
 }
-/*
+
 @media (min-width: 900px){
     .container{
         width: 90%;
         height: 90%;
+        background-color: white;
         display: grid;
-        grid-template-columns: 70% 1fr;
-        grid-template-rows: 50px 300px 1fr;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto 300px 1fr;
+        grid-gap: 10px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
-        "ct ct ct ct ct sd sd sd"
+        "ct sd sd sd sd sd sd sd"
         "ft ft ft ft ft ft ft ft";
-        border: red;
-    }
+        }
 }
-*/
+
 .header{
-    background-color: blue;
-    grid-area: 1/1/2/3;
+    grid-area: hd;
 }
+
+    h1{
+        color: teal;
+    }
+    .nav-list{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        background-color: #666;
+    }
+
+    li{
+        float: left;
+    }
+    
+    li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover{
+        background-color: #333;
+        color: white;
+    }
+
+    li .active{
+        background-color: teal;
+    }
+
 
 .section{
     background-color: red;
-    grid-area: 2/1/3/2;
+    grid-area: ct;
 }
 
-.article{
-    background-color: green;
-    grid-area: 2/2/3/3;
+.side{
+    grid-area: sd;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 2);
+    grid-gap: 5px;
 }
+    .posts{
+        border: black;
+        border-width: 2px;
+        background-color: green;
+    }
+
+    .media-links{
+        border: black;
+        border-width: 2px;
+        background-color: teal;
+    }
+
 .footer{
     background-color: orange;
-    grid-area: 3/1/4/3;
+    grid-area: ft;
 }
+
