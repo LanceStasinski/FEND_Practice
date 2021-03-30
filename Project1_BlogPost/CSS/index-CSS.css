@@ -81,6 +81,12 @@ main{
     grid-area: ct;
 }
 
+main p{
+    color: #888;
+    text-indent: 2em;
+    text-align: justify;
+    text-justify: inter-word;
+}
 main img{
     border-radius: 20%;
     width: 200px;
@@ -140,6 +146,11 @@ main img{
 .media-links a:hover{
     transform: scale(1.15);
 }
+
+.media-links img{
+    height: 48px;
+    width: 48px;
+}
 /* || footer */
 footer{
     background-image: linear-gradient(to right, rgb(8, 155, 155), #888);
@@ -159,4 +170,5 @@ footer a{
 
 footer a:hover{
     background-color: #333;
+    color: white;
 }
