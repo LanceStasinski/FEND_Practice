@@ -12,8 +12,8 @@
     display: grid;
     background-color: white;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr auto auto;
-    grid-gap: 10px;
+    grid-template-rows: auto 1fr auto auto auto;
+    gap: 10px;
     grid-template-areas: 
     "hd"
     "ct"
@@ -30,10 +30,10 @@
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: auto 1fr 1fr auto;
-        grid-gap: 10px;
+        gap: 10px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd hd hd"
-        "ct ct ct ct ct ct ct sd sd sd"
+        "ct ct ct ct ct ct ct ct sd sd"
         "cd cd cd cd cd cd cd cd cd cd"
         "ft ft ft ft ft ft ft ft ft ft";
     }
@@ -46,6 +46,10 @@ h1,h2,h3{
 
 p{
     color: #888;
+    text-indent: 2em;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px 5px 0px 5px;
 }
 
 
