@@ -3,7 +3,7 @@
 @import url(sidebar.css);
 @import url(main.css);
 @import url(footer.css);
-@import url(card.css);
+@import url(card_old.css);
 
 /* || reactive containers */
 .container{
