@@ -1,12 +1,12 @@
 /*imports*/
-@import url(header.css);
-@import url(sidebar.css);
-@import url(about_content.css);
-@import url(footer.css);
+@import url(../../general-styling/header.css);
+@import url(../../general-styling/footer.css);
+@import url(../../general-styling/sidebar.css);
+@import url(about-content.css);
 
 
 /* || reactive containers */
-.container{
+.container {
     width: 90%;
     display: grid;
     background-color: white;
@@ -21,8 +21,8 @@
     "ft";
 }
 
-@media (min-width: 800px){
-    .container{
+@media (min-width: 800px) {
+    .container {
         width: 90%;
         background-color: white;
         display: grid;
@@ -38,16 +38,19 @@
 }
 
 /* || general */
-h1,h2,h3{
-    color:rgb(8, 155, 155);
-}
+    h1, h2, h3 {
+        color:rgb(8, 155, 155);
+    }
 
-p{
-    color: #888;
-    text-indent: 2em;
-    text-align: justify;
-    text-justify: inter-word;
-    margin: 0px 5px 0px 5px;
-}
+    p {
+        color: #888;
+        text-indent: 2em;
+        text-align: justify;
+        text-justify: inter-word;
+        margin: 0px 5px 0px 5px;
+    }
 
+    figcaption {
+        color:#aaa;
+    }
 
